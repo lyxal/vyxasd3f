@@ -59,9 +59,12 @@ install_version() {
 		mkdir -p "$install_path"
 		cp -r "$ASDF_DOWNLOAD_PATH"/* "$install_path"
 
-		echo '#!/bin/bash
-java -jar "$install_path/vyxal3.jar" "$@"' > vyxal3 && chmod +x vyxal3
+		cd "$install_path"
 
+		ls .
+
+		echo '#!/bin/bash
+java -jar "$(dirname "$0")/vyxal3.jar" "$@"' > vyxal3 && chmod +x vyxal3
         ls .
 
 		vyxal3 --help
