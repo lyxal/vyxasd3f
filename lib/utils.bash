@@ -61,13 +61,8 @@ install_version() {
 
 		cd "$install_path"
 
-		ls .
-
 		echo '#!/bin/bash
 java -jar "$(dirname "$0")/vyxal3.jar" "$@"' > vyxal3 && chmod +x vyxal3
-        ls .
-
-		vyxal3 --help
 
 		local tool_cmd
 		tool_cmd="$(echo "$TOOL_TEST" | cut -d' ' -f1)"
