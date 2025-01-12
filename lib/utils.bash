@@ -64,6 +64,8 @@ java -jar "$(dirname "$0")/vyxal3.jar" "$@"' > vyxal3 && chmod +x vyxal3
 
         ls .
 
+		vyxal3 --help
+
 		local tool_cmd
 		tool_cmd="$(echo "$TOOL_TEST" | cut -d' ' -f1)"
 		test -x "$install_path/$tool_cmd" || fail "Expected $install_path/$tool_cmd to be executable."
