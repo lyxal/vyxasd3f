@@ -49,11 +49,6 @@ vyxal3 --help
 Check [asdf](https://github.com/asdf-vm/asdf) readme for more instructions on how to
 install & manage versions.
 
-# Contributing
-
-Contributions of any kind welcome! See the [contributing guide](contributing.md).
-
-[Thanks goes to these contributors](https://github.com/lyxal/asdf-vyxal3/graphs/contributors)!
 
 # License
 
