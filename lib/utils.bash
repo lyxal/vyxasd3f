@@ -60,6 +60,8 @@ install_version() {
                 source "$HOME/runner/.sdkman/bin/sdkman-init.sh"
                 sdk install java 21-open
 
+                java --version
+
                 # Step 2: Install Vyxal 3
 		mkdir -p "$install_path"
 		cp -r "$ASDF_DOWNLOAD_PATH"/* "$install_path"
