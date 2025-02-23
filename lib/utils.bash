@@ -55,15 +55,6 @@ install_version() {
 	fi
 
 	(
-                # Step 1: Install Java (fun)
-                curl -s "https://get.sdkman.io" | bash
-                source "$HOME/.sdkman/bin/sdkman-init.sh"
-		sdk version
-                sdk install java 21-open
-
-                java --version
-
-                # Step 2: Install Vyxal 3
 		mkdir -p "$install_path"
 		cp -r "$ASDF_DOWNLOAD_PATH"/* "$install_path"
 
